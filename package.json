@@ -7,7 +7,7 @@
     "test": "jest __tests__/*",
     "lint": "eslint ./src",
     "dev": "nodemon ./src/server.js",
-    "start": "node ./src/server.js"
+    "prod": "NODE_ENV=production node ./src/server.js"
   },
   "author": "",
   "license": "ISC",

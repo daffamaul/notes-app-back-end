@@ -5,7 +5,7 @@ module.exports = {
   name: "notes",
   version: "1.0.0",
   register: async (server, { service }) => {
-    const notesHanlder = new NotesHandler(service);
-    server.route(routes(notesHanlder));
+    const notesHandler = new NotesHandler(service);
+    server.route(routes(notesHandler));
   },
 };

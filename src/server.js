@@ -13,11 +13,11 @@ const init = async () => {
     },
   });
 
-  const noteService = new NotesService();
+  const notesService = new NotesService();
 
   await server.register({
     plugin: notes,
-    options: { service: noteService },
+    options: { service: notesService },
   });
 
   await server.start();
